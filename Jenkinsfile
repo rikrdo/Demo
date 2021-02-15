@@ -4,7 +4,6 @@ pipeline {
         skipDefaultCheckout(true)
     }
     stages {
-    stages {
         stage('Initialize') {
             steps {
                 checkout scm
