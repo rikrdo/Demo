@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'sudo cp -r ./target/*.jar /opt/demo/'
+                sh 'sudo cp  ./target/*.jar /opt/demo/test.jar'
             }
         }
     }
