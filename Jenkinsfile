@@ -23,7 +23,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh 'sudo service demo stop'
                 sh 'sudo cp  ./target/*.jar /opt/demo/test.jar'
+                sh 'sudo service demo start'
+                sh 'sleep 10'
             }
         }
     }
