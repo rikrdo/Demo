@@ -23,6 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh 'cp -r ./target/*.jar /opt/demo/'
             }
         }
     }
