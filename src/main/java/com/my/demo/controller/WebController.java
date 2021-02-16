@@ -1,4 +1,4 @@
-package com.tutorialspoint.demo.controller;
+package com.my.demo.controller;
 
 
 import org.springframework.stereotype.Controller;
@@ -14,7 +14,13 @@ public class WebController {
 
     @RequestMapping(value = "/demo")
     public String demo() {
+
+        sumaTest(1,2);
         return "demo";
+    }
+
+    public int sumaTest(int a, int b){
+        return a+b;
     }
 
 
